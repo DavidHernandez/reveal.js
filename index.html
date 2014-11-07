@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="css/reveal.min.css">
-        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,7 +42,7 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
-                <section>
+                <section data-background="img/background.png">
                     <h1>Arquitectura de Proyectos Drupal</h1>
                     <h3>DrupalDay Bilbao 2014</h3>
                     <p>
@@ -50,36 +50,37 @@
                     </p>
                 </section>
 
-                <section>
-                <h2>¿Quién soy yo?</h2>
-                <ul>
-                    <li>David Hernández</li>
-                    <li><a href="http://twitter.com/david_baltha">@David_Baltha</a></li>
-                    <li><a href="http://davidhernandez.info">Blog</a></li>
-                    <li>AED / DrupalVal</li>
-                </ul>
+                <section data-background="img/background.png">
+                    <h2>¿Quién soy yo?</h2>
+                    <ul>
+                        <li>David Hernández</li>
+                        <li><a href="http://twitter.com/david_baltha">@David_Baltha</a></li>
+                        <li>Blog: <a href="http://davidhernandez.info">davidhernandez.info</a></li>
+                        <li>AED / DrupalVal</li>
+                        <li>Trabajo en <a href="http://mercalia.com">Mercalia</a></li>
+                    </ul>
                 </section>
 
-                <section>
-                <h2>¿De qué va este taller?</h2>
-                <ul>
-                    <li>¿Desarrollo? ¡No!</li>
-                    <li>¿Introducción a Drupal? ¡No!</li>
-                    <li>¿Cómo trabajamos con Drupal? ¡Si!</li>
-                </ul>
+                <section data-background="img/background.png">
+                    <h2>¿De qué va este taller?</h2>
+                    <ul>
+                        <li>¿Desarrollo? ¡No!</li>
+                        <li>¿Introducción a Drupal? ¡No!</li>
+                        <li>¿Cómo trabajamos con Drupal? ¡Si!</li>
+                    </ul>
                 </section>
 
-                <section>
-                <h2>¿Qué puedes esperar de este taller?</h2>
-                <ul>
-                    <li>Mucho contenido.</li>
-                    <li>Poco código.</li>
-                    <li>Mucha terminal.</li>
-                    <li>Pocas slides.</li>
-                </ul>
+                <section data-background="img/background.png">
+                    <h2>¿Qué puedes esperar de este taller?</h2>
+                    <ul>
+                        <li>Mucho contenido.</li>
+                        <li>Poco código.</li>
+                        <li>Mucha terminal.</li>
+                        <li>Pocas slides.</li>
+                    </ul>
                 </section>
 
-                <section>
+                <section data-background="img/background.png">
                     <h2>Nuestros objetivos</h2>
                     <ul>
                         <li>Mejorar el trabajo en equipo.</li>
@@ -88,13 +89,27 @@
                     </ul>
                 </section>
 
+                <section data-background="img/background.png">
+                    <img src="img/turron.jpg" />
+                </section>
+
+                <section data-background="img/background.png">
+                    <h2>Antes de empezar...</h2>
+                    <img src="img/dangerous.jpg" />
+                    <p>Código: <a href="http://bit.ly/10xmWuy">http://bit.ly/10xmWuy</a></p>
+                    <p>Slides: <a href="http://bit.ly/1qtmCEb">http://bit.ly/1qtmCEb</a></p>
+                </section>
+
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Estructura de carpetas</h2>
-                        <p>¡A la terminal!</p>
                     </section>
 
-                    <section>
+                    <section data-background="img/matrix.gif">
+                        <h3 style="color:#FFFFFF;">¡A la terminal!</h3>
+                    </section>
+
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>contrib</li>
@@ -104,7 +119,7 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Notas</h3>
                         <p>Módulos custom, no un módulo custom.</p>
                         <p>Principio de única responsabilidad.</p>
@@ -113,11 +128,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Perfiles de instalación</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Ventajas</h3>
                         <ul>
                             <li>Actualizaciones genéricas en un sitio con sentido.</li>
@@ -129,11 +144,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Drush Make</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>drupal-org-core.make</li>
@@ -145,11 +160,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Versioning</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>Solo versionas código custom. Nunca core o contrib.</li>
@@ -157,7 +172,7 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Notas</h3>
                         <p>Branching y flujos es un tema aparte. ¡Búscalo!</p>
                     </section>
@@ -165,11 +180,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Configuración a código</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Módulos útiles</h3>
                         <ul>
                             <li>Strongarm</li>
@@ -178,14 +193,14 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>Exporta basado en componentes, no en funcionalidades.</li>
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Notas</h3>
                         <p>Evita el sistema de bloques y los custom blocks.</p>
                     </section>
@@ -193,15 +208,15 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Automatización de tareas</h2>
                     </section>
 
-                    <section>
-                    <img src="" />
+                    <section data-background="img/background.png">
+                    <img src="img/automate.jpg" />
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>Automatiza todo lo automatizable:</li>
@@ -211,18 +226,21 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Notas</h3>
                         <p>Puedes automarizar features, pero ¡cuidado!</p>
                     </section>
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Deploys</h2>
                     </section>
 
                     <section>
+                        <img src="img/surprised.gif" />
+                    </section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>El método Capistrano.</li>
@@ -231,7 +249,7 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Notas</h3>
                         <ul>
                             <li>Los pasos del deploy pueden variar entre entornos.</li>
@@ -243,11 +261,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Flujo del día a día</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Resumen</h3>
                         <ul>
                             <li>Subir cambios.</li>
@@ -260,11 +278,11 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-background="img/background.png">
                         <h2>Otras consideraciones</h2>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Testing</h3>
                         <ul>
                             <li>SimpleTest.</li>
@@ -275,29 +293,29 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section data-background="img/background.png">
                         <h3>Integración continua</h3>
                     </section>
 
                 </section>
 
-                <section>
+                <section data-background="img/background.png">
                     <h2>¿Preguntas?</h2>
                 </section>
 
-                <section>
+                <section data-background="img/background.png">
                     <h2>Más información</h2>
                     <ul>
-                        <li>Github</li>
-                        <li>davidhernandez.info</li>
+                        <li><a href="https://github.com/DavidHernandez/profile-boilerplate">Github</a></li>
+                        <li><a href="https://rawgit.com/DavidHernandez/reveal.js/dday2014/index.html">Slides</a></li>
+                        <li><a href="http://davidhernandez.info/blog/drupal-projects-architecture">Blog post en davidhernandez.info</a></li>
                     </ul>
                 </section>
 
-                <section>
+                <section data-background="img/background.png">
                     <h2>¡Gracias!</h2>
                 </section>
 
-            </div>
             </div>
 
         </div>

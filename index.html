@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Arquitectura de proyectos Drupal</title>
+        <title>Drupal Architecture Workshop</title>
 
-        <meta name="description" content="Architectura de proyectos Drupal. DrupalDay Bilbao 2014">
+        <meta name="description" content="Drupal Architecture Workshop. DrupalCamp Spain 2015">
         <meta name="author" content="David Hernández">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -43,49 +43,30 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section data-background="img/background.png">
-                    <h1>Arquitectura de Proyectos Drupal</h1>
-                    <h3>DrupalDay Bilbao 2014</h3>
+                    <h1>Drupal Architecture Workshop</h1>
+                    <h3>DrupalCamp Spain 2015</h3>
                     <p>
                         <small>Created by <a href="http://davidhernandez.info">David Hernández</a></small>
                     </p>
                 </section>
 
                 <section data-background="img/background.png">
-                    <h2>¿Quién soy yo?</h2>
+                    <h2>Who am I=</h2>
                     <ul>
                         <li>David Hernández</li>
                         <li><a href="http://twitter.com/david_baltha">@David_Baltha</a></li>
                         <li>Blog: <a href="http://davidhernandez.info">davidhernandez.info</a></li>
                         <li>AED / DrupalVal</li>
-                        <li>Trabajo en <a href="http://mercalia.com">Mercalia</a></li>
+                        <li>I work on <a href="http://mercalia.com">Mercalia</a></li>
                     </ul>
                 </section>
 
                 <section data-background="img/background.png">
-                    <h2>¿De qué va este taller?</h2>
+                    <h2>Our goals</h2>
                     <ul>
-                        <li>¿Desarrollo? ¡No!</li>
-                        <li>¿Introducción a Drupal? ¡No!</li>
-                        <li>¿Cómo trabajamos con Drupal? ¡Si!</li>
-                    </ul>
-                </section>
-
-                <section data-background="img/background.png">
-                    <h2>¿Qué puedes esperar de este taller?</h2>
-                    <ul>
-                        <li>Mucho contenido.</li>
-                        <li>Poco código.</li>
-                        <li>Mucha terminal.</li>
-                        <li>Pocas slides.</li>
-                    </ul>
-                </section>
-
-                <section data-background="img/background.png">
-                    <h2>Nuestros objetivos</h2>
-                    <ul>
-                        <li>Mejorar el trabajo en equipo.</li>
-                        <li>Mejorar nuestros procesos.</li>
-                        <li>Mayor confianza.</li>
+                        <li>Improve team coperation</li>
+                        <li>Improve our processes</li>
+                        <li>Improve our confidence</li>
                     </ul>
                 </section>
 
@@ -94,23 +75,23 @@
                 </section>
 
                 <section data-background="img/background.png">
-                    <h2>Antes de empezar...</h2>
+                    <h2>Before we start</h2>
                     <img src="img/dangerous.jpg" />
-                    <p>Código: <a href="http://bit.ly/10xmWuy">http://bit.ly/10xmWuy</a></p>
+                    <p>Code: <a href="http://bit.ly/10xmWuy">http://bit.ly/10xmWuy</a></p>
                     <p>Slides: <a href="http://bit.ly/1qtmCEb">http://bit.ly/1qtmCEb</a></p>
                 </section>
 
                 <section>
                     <section data-background="img/background.png">
-                        <h2>Estructura de carpetas</h2>
+                        <h2>Folder structure</h2>
                     </section>
 
                     <section data-background="img/matrix.gif">
-                        <h3 style="color:#FFFFFF;">¡A la terminal!</h3>
+                        <h3 style="color:#FFFFFF;">To the shell!</h3>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
                             <li>contrib</li>
                             <li>custom</li>
@@ -120,24 +101,24 @@
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Notas</h3>
-                        <p>Módulos custom, no un módulo custom.</p>
-                        <p>Principio de única responsabilidad.</p>
+                        <h3>Notes</h3>
+                        <p>Custom modules, not a custom module</p>
+                        <p>Single responsibility principle</p>
                     </section>
 
                 </section>
 
                 <section>
                     <section data-background="img/background.png">
-                        <h2>Perfiles de instalación</h2>
+                        <h2>Installation profiles</h2>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Ventajas</h3>
+                        <h3>Advantages</h3>
                         <ul>
-                            <li>Actualizaciones genéricas en un sitio con sentido.</li>
-                            <li>Mejor gestión de las dependencias.</li>
-                            <li>Replicación más fácil</li>
+                            <li>Better control over updates</li>
+                            <li>Better control over dependencies</li>
+                            <li>Easy replication</li>
                         </ul>
                     </section>
 
@@ -149,7 +130,7 @@
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
                             <li>drupal-org-core.make</li>
                             <li>drupal-org.make</li>
@@ -165,51 +146,51 @@
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
-                            <li>Solo versionas código custom. Nunca core o contrib.</li>
-                            <li>La excepción son módulos hackeados sin parche.</li>
+                            <li>We only put under version control the custom. Never core or contrib</li>
+                            <li>The exception is hacked code without patch</li>
                         </ul>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Notas</h3>
-                        <p>Branching y flujos es un tema aparte. ¡Búscalo!</p>
+                        <h3>Notes</h3>
+                        <p>Branching and workflows is a different topic. Search for it!</p>
                     </section>
 
                 </section>
 
                 <section>
                     <section data-background="img/background.png">
-                        <h2>Configuración a código</h2>
+                        <h2>Configuration to code</h2>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Módulos útiles</h3>
+                        <h3>Useful modules</h3>
                         <ul>
                             <li>Strongarm</li>
-                            <li>Context (o Panels)</li>
+                            <li>Context (or Panels)</li>
                             <li>Beans / Context</li>
                         </ul>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
-                            <li>Exporta basado en componentes, no en funcionalidades.</li>
+                            <li>Export based on components, not in functionality.</li>
                         </ul>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Notas</h3>
-                        <p>Evita el sistema de bloques y los custom blocks.</p>
+                        <h3>Notes</h3>
+                        <p>Avoid the block system and custom blocks.</p>
                     </section>
 
                 </section>
 
                 <section>
                     <section data-background="img/background.png">
-                        <h2>Automatización de tareas</h2>
+                        <h2>Tasks automations</h2>
                     </section>
 
                     <section data-background="img/background.png">
@@ -217,18 +198,18 @@
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
-                            <li>Automatiza todo lo automatizable:</li>
+                            <li>Automate as much as possible:</li>
                             <li>Deploys</li>
                             <li>Builds</li>
-                            <li>Actualizaciones</li>
+                            <li>Updates</li>
                         </ul>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Notas</h3>
-                        <p>Puedes automarizar features, pero ¡cuidado!</p>
+                        <h3>Notes</h3>
+                        <p>You can automate features, but carefully!</p>
                     </section>
                 </section>
 
@@ -241,37 +222,20 @@
                         <img src="img/surprised.gif" />
                     </section>
                     <section data-background="img/background.png">
-                        <h3>Resumen</h3>
+                        <h3>Overview</h3>
                         <ul>
-                            <li>El método Capistrano.</li>
-                            <li>Mantén configuración y archivos fuera de Drupal.</li>
-                            <li>Sigue el mismo proceso entre todos los entornos.</li>
+                            <li>Capistrano</li>
+                            <li>Keep configuration and files out of Drupal</li>
+                            <li>Follow the same processes in all the environments</li>
                         </ul>
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Notas</h3>
+                        <h3>Notes</h3>
                         <ul>
-                            <li>Los pasos del deploy pueden variar entre entornos.</li>
-                            <li>Backups son siempre esenciales.</li>
-                            <li>Para hacer un rollback, activar release antigua y restaurar backup.</li>
-                        </ul>
-                    </section>
-
-                </section>
-
-                <section>
-                    <section data-background="img/background.png">
-                        <h2>Flujo del día a día</h2>
-                    </section>
-
-                    <section data-background="img/background.png">
-                        <h3>Resumen</h3>
-                        <ul>
-                            <li>Subir cambios.</li>
-                            <li>Deploy de cambios.</li>
-                            <li>Rebuild del sitio.</li>
-                            <li>Aplicar actualizaciones.</li>
+                            <li>Deployment steps may change between environments</li>
+                            <li>Always take backups</li>
+                            <li>To roll back, just activate old release and restore a backup</li>
                         </ul>
                     </section>
 
@@ -279,7 +243,24 @@
 
                 <section>
                     <section data-background="img/background.png">
-                        <h2>Otras consideraciones</h2>
+                        <h2>Daily workflow</h2>
+                    </section>
+
+                    <section data-background="img/background.png">
+                        <h3>Overview</h3>
+                        <ul>
+                            <li>Upload changes</li>
+                            <li>Deploy changes</li>
+                            <li>Site rebuild</li>
+                            <li>Apply updates</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section data-background="img/background.png">
+                        <h2>Other considerations</h2>
                     </section>
 
                     <section data-background="img/background.png">
@@ -294,20 +275,20 @@
                     </section>
 
                     <section data-background="img/background.png">
-                        <h3>Integración continua</h3>
+                        <h3>CI</h3>
                     </section>
 
                 </section>
 
                 <section data-background="img/background.png">
-                    <h2>¿Preguntas?</h2>
+                    <h2>Questions?</h2>
                 </section>
 
                 <section data-background="img/background.png">
-                    <h2>Más información</h2>
+                    <h2>More information</h2>
                     <ul>
                         <li><a href="https://github.com/DavidHernandez/profile-boilerplate">Github</a></li>
-                        <li><a href="https://rawgit.com/DavidHernandez/reveal.js/dday2014/index.html">Slides</a></li>
+                        <li><a href="https://rawgit.com/DavidHernandez/reveal.js/camp15/index.html">Slides</a></li>
                         <li><a href="http://davidhernandez.info/blog/drupal-projects-architecture">Blog post en davidhernandez.info</a></li>
                     </ul>
                 </section>
@@ -317,14 +298,12 @@
                 </section>
 
             </div>
-
         </div>
 
         <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.min.js"></script>
 
         <script>
-
             // Full list of configuration options available here:
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
